@@ -55,3 +55,35 @@ calculator.sub(5, 3);
 
 const div = (s,t) => s/t
 console.log(div(10,2))
+
+const dir = setTimeout(()=>{
+    console.log("after 1 sec")
+},1000)
+
+
+
+function showArgs() {
+  console.log(arguments);   // [1, 2, 3]
+}
+showArgs(1, 2, 3);
+
+
+// but in arrow function do not have the arguments there are rest param.....
+
+const showargs = (...args)=>{
+    console.log(typeof(args))
+}
+showargs(1,2)
+
+// check list
+
+// normal function declaration
+// function hoisting
+// function call 
+// function parameter
+// function arguments
+// anonymous function
+// arrow function with anonymous
+// rest parameter (...args)
+// the object stored in the function and also accessed that
+// setTimeout uses in both simple function and arrow function
